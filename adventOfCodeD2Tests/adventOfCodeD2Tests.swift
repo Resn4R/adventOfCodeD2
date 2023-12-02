@@ -9,14 +9,33 @@ import XCTest
 @testable import adventOfCodeD2
 
 final class adventOfCodeD2Tests: XCTestCase {
-    func testGivenAGameShouldReturnNumberOfEachDice() {
-        let dm = DiceMaster()
+    func testGivenAGameWhenValidShouldReturn1() {
+        var dm = DiceMaster()
         let game = "Game 1: 4 red, 5 blue, 4 green; 7 red, 8 blue, 2 green; 9 blue, 6 red; 1 green, 3 red, 7 blue; 3 green, 7 red"
         
         let result = 1
         
         XCTAssertEqual(dm.getPossibleGames(from: Self.puzzleInput), result)
     }
+    
+    func testGivenTwoGamesWhenValidShouldReturn2() {
+        var dm = DiceMaster()
+        let game = """
+            Game 1: 4 red, 5 blue, 4 green; 7 red, 8 blue, 2 green; 9 blue, 6 red; 1 green, 3 red, 7 blue; 3 green, 7 red
+            Game 3: 3 green, 4 red; 10 red, 2 blue, 5 green; 9 red, 3 blue, 5 green
+        """
+        
+        let result = 2
+        
+        XCTAssertEqual(dm.getPossibleGames(from: game), result)
+    }
+    
+    
+    
+    
+    
+    
+    
     
     static let puzzleInput = """
     Game 1: 4 red, 5 blue, 4 green; 7 red, 8 blue, 2 green; 9 blue, 6 red; 1 green, 3 red, 7 blue; 3 green, 7 red
