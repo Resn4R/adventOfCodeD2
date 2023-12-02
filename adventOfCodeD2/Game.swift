@@ -7,37 +7,21 @@
 
 import Foundation
 
-struct Roll{
-    let redDieCount: Int
-    let greenDieCount: Int
-    let blueDieCount: Int
-}
-
-struct Game {
-    let rollCount: Int
-    
-    let rolls: [Roll]
-}
-
-
 struct DiceMaster {
-    
-    private mutating func convert(from rawInput: String, to destination: inout [String], option: CharacterSet = .newlines) {
-        destination = rawInput.components(separatedBy: option)
-    }
-    
-    mutating func getPossibleGames(from rawInput: String) -> Int {
+
+    mutating func getPossibleGames(from rawInput: String, forPart part: Int) -> Int {
         let diceBag = (red: 12, green: 13, blue: 14)
         
         var validGames = 0
+        var sumOfPowers = 0
         
         var games: [String] = rawInput.components(separatedBy: .newlines)
         
         games.forEach{ game in
             
-            var highRed = 0
-            var highGreen = 0
-            var highBlue = 0
+            var highRed = 1
+            var highGreen = 1
+            var highBlue = 1
             
             var gameID = -1
             
@@ -54,10 +38,10 @@ struct DiceMaster {
                         highRed = redDieCount
                     }
                 }
-               else if dice.contains("green") {
+                else if dice.contains("green") {
                     let greenDieCount = Int(String(dice.filter{$0.isNumber}))!
                     
-                   if greenDieCount > highGreen {
+                    if greenDieCount > highGreen {
                         highGreen = greenDieCount
                     }
                 }
@@ -70,6 +54,8 @@ struct DiceMaster {
                 }
             }
             
+            sumOfPowers += highRed * highGreen * highBlue
+            
             guard highRed <= diceBag.red else { return }
             guard highGreen <= diceBag.green else { return }
             guard highBlue <= diceBag.blue else { return }
@@ -77,7 +63,7 @@ struct DiceMaster {
             validGames += gameID
         }
         
-        return validGames
+        return part == 1 ? validGames : sumOfPowers
     }
 }
 

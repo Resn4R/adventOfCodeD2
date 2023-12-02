@@ -7,56 +7,24 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "83945379-A902-4281-8948-11A8EC25C44E"
-            shouldBeEnabled = "No"
+            uuid = "B1922C31-9408-4B7E-8E83-EAD59A3E704F"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "adventOfCodeD2/Game.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "getPossibleGames(from:)"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getPossibleGames(from:forPart:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "83945379-A902-4281-8948-11A8EC25C44E - 789ba8d69b2eacd7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "adventOfCodeD2.DiceMaster.getPossibleGames(from: Swift.String) -&gt; Swift.Int"
-                  moduleName = "adventOfCodeD2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vitob/Desktop/Swift%20Projects/Advent%20Of%20Code%202023/adventOfCodeD2/adventOfCodeD2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "368">
-               </Location>
-               <Location
-                  uuid = "83945379-A902-4281-8948-11A8EC25C44E - b371afe1844c646e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.String) -&gt; () in adventOfCodeD2.DiceMaster.getPossibleGames(from: Swift.String) -&gt; Swift.Int"
-                  moduleName = "adventOfCodeD2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vitob/Desktop/Swift%20Projects/Advent%20Of%20Code%202023/adventOfCodeD2/adventOfCodeD2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "280">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "67AA785B-1800-4626-B39D-6D1034D4249B"
-            shouldBeEnabled = "No"
+            uuid = "07887347-50A4-4B28-B8F8-93330C55B9EB"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "adventOfCodeD2/Game.swift"
@@ -64,40 +32,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
             endingLineNumber = "45"
-            landmarkName = "getPossibleGames(from:)"
+            landmarkName = "getPossibleGames(from:forPart:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "67AA785B-1800-4626-B39D-6D1034D4249B - b371afe1844c6566"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.String) -&gt; () in adventOfCodeD2.DiceMaster.getPossibleGames(from: Swift.String) -&gt; Swift.Int"
-                  moduleName = "adventOfCodeD2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vitob/Desktop/Swift%20Projects/Advent%20Of%20Code%202023/adventOfCodeD2/adventOfCodeD2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "400">
-               </Location>
-               <Location
-                  uuid = "67AA785B-1800-4626-B39D-6D1034D4249B - 1e4ad373777a1284"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.String) -&gt; () in closure #1 (Swift.String) -&gt; () in adventOfCodeD2.DiceMaster.getPossibleGames(from: Swift.String) -&gt; Swift.Int"
-                  moduleName = "adventOfCodeD2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vitob/Desktop/Swift%20Projects/Advent%20Of%20Code%202023/adventOfCodeD2/adventOfCodeD2/Game.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "188">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77F0DD00-EE73-4F55-9605-E896E8C1214F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "adventOfCodeD2/Game.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "getPossibleGames(from:forPart:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F31DB770-BA94-4477-91EC-BB200E764841"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "adventOfCodeD2/Game.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "getPossibleGames(from:forPart:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
