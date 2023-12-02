@@ -15,21 +15,40 @@ final class adventOfCodeD2Tests: XCTestCase {
         
         let result = 1
         
-        XCTAssertEqual(dm.getPossibleGames(from: Self.puzzleInput), result)
+        XCTAssertEqual(dm.getPossibleGames(from: game), result)
+    }
+    
+    func testGivenAnInvalidGameWhenValidShouldReturn0() {
+        var dm = DiceMaster()
+        let game = "Game 1: 4 red, 5 blue, 4 green; 7 red, 8 blue, 2 green; 9 blue, 6 red; 1 green, 30 red, 7 blue; 3 green, 7 red"
+        
+        let result = 0
+        
+        XCTAssertEqual(dm.getPossibleGames(from: game), result)
     }
     
     func testGivenTwoGamesWhenValidShouldReturn2() {
         var dm = DiceMaster()
         let game = """
-            Game 1: 4 red, 5 blue, 4 green; 7 red, 8 blue, 2 green; 9 blue, 6 red; 1 green, 3 red, 7 blue; 3 green, 7 red
-            Game 3: 3 green, 4 red; 10 red, 2 blue, 5 green; 9 red, 3 blue, 5 green
+        Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
+        Game 2: 1 blue, 2 green; 3 green, 4 blue, 1 red; 1 green, 1 blue
+        Game 3: 8 green, 6 blue, 20 red; 5 blue, 4 red, 13 green; 5 green, 1 red
+        Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red
+        Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
         """
         
-        let result = 2
+        let result = 8
         
         XCTAssertEqual(dm.getPossibleGames(from: game), result)
     }
     
+    func testGivenPuzzleInputShouldReturnKataSolution() {
+        var dm = DiceMaster()
+        
+        let result = 2061
+        
+        XCTAssertEqual(dm.getPossibleGames(from: Self.puzzleInput), result)
+    }
     
     
     

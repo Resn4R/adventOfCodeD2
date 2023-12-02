@@ -39,25 +39,30 @@ struct DiceMaster {
             var highGreen = 0
             var highBlue = 0
             
+            var gameID = -1
+            
             let rolls = game.components(separatedBy: .punctuationCharacters)
             
             rolls.forEach { dice in
-                if dice.contains("red") {
-                    let redDieCount = Int(String(dice.first(where: {$0.isNumber})!))!
+                if dice.contains("Game") {
+                    gameID = Int(String(dice.filter{$0.isNumber}))!
+                }
+                else if dice.contains("red") {
+                    let redDieCount = Int(String(dice.filter{$0.isNumber}))!
                     
                     if  redDieCount > highRed {
                         highRed = redDieCount
                     }
                 }
                else if dice.contains("green") {
-                    let greenDieCount = Int(String(dice.first(where: {$0.isNumber})!))!
+                    let greenDieCount = Int(String(dice.filter{$0.isNumber}))!
                     
                    if greenDieCount > highGreen {
                         highGreen = greenDieCount
                     }
                 }
                 else if dice.contains("blue") {
-                    let blueDieCount = Int(String(dice.first(where: {$0.isNumber})!))!
+                    let blueDieCount = Int(String(dice.filter{$0.isNumber}))!
                     
                     if blueDieCount > highBlue {
                         highBlue = blueDieCount
@@ -65,11 +70,11 @@ struct DiceMaster {
                 }
             }
             
-            guard highRed < diceBag.red else { return }
-            guard highGreen < diceBag.green else { return }
-            guard highBlue < diceBag.blue else { return }
+            guard highRed <= diceBag.red else { return }
+            guard highGreen <= diceBag.green else { return }
+            guard highBlue <= diceBag.blue else { return }
             
-            validGames += 1
+            validGames += gameID
         }
         
         return validGames
