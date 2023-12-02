@@ -14,6 +14,7 @@
 		4FD1F0792B1B728600334419 /* adventOfCodeD2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD1F0782B1B728600334419 /* adventOfCodeD2Tests.swift */; };
 		4FD1F0832B1B728600334419 /* adventOfCodeD2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD1F0822B1B728600334419 /* adventOfCodeD2UITests.swift */; };
 		4FD1F0852B1B728600334419 /* adventOfCodeD2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD1F0842B1B728600334419 /* adventOfCodeD2UITestsLaunchTests.swift */; };
+		4FD1F0922B1B739100334419 /* DiceMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD1F0912B1B739100334419 /* DiceMaster.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4FD1F07E2B1B728600334419 /* adventOfCodeD2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = adventOfCodeD2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD1F0822B1B728600334419 /* adventOfCodeD2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adventOfCodeD2UITests.swift; sourceTree = "<group>"; };
 		4FD1F0842B1B728600334419 /* adventOfCodeD2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adventOfCodeD2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4FD1F0912B1B739100334419 /* DiceMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceMaster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				4FD1F0672B1B728400334419 /* adventOfCodeD2App.swift */,
 				4FD1F0692B1B728400334419 /* ContentView.swift */,
+				4FD1F0912B1B739100334419 /* DiceMaster.swift */,
 				4FD1F06B2B1B728600334419 /* Assets.xcassets */,
 				4FD1F06D2B1B728600334419 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				4FD1F06A2B1B728400334419 /* ContentView.swift in Sources */,
 				4FD1F0682B1B728400334419 /* adventOfCodeD2App.swift in Sources */,
+				4FD1F0922B1B739100334419 /* DiceMaster.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
